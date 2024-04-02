@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite + Vue</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Vue template goes here -->
+    <div class="portfolio">
+      <header class="header">
+        <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Hobby</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="gambar-bulat">
+          <div class="gambar-mask">
+            <img src="/public/20240402_140131.jpg" alt="Deskripsi gambar">
+          </div>
+        </div>
+        <div class="intro">
+          <h1>{{ title }}</h1>
+          <div class="portfolio-content">
+            <h2>Portofolio Saya</h2>
+            <p>
+              Saya adalah seorang mahasiswi bernama anggita wahyudini putri yang sedang menempuh pendidikan di Universitas Islam Riau, jurusan Teknik Informatika. Saya memiliki minat yang kuat dalam beberapa bidang, seperti pengembangan web, pemrograman, dan desain grafis. Selain itu, saya juga memiliki beberapa hobi, seperti membaca, menulis, dan memasak.
+            </p>
+            <h3>Hobi</h3>
+            <ul>
+              <li>Menulis</li>
+              <li>Membaca buku</li>
+              <li>Memasak</li>
+            </ul>
+            <h3>Pengalaman</h3>
+            <ul>
+              <li>Pernah bekerja di sebuah perusahaan</li>
+            </ul>
+            <p>
+              Untuk menghubungi saya, silakan kunjungi halaman
+              <router-link to="/contact">Kontak</router-link>.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2024 Anggita wahyudini putri</p>
+      </footer>
+    </div>
+    <!-- End of Vue template -->
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html> 
